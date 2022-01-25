@@ -1,2 +1,17 @@
 <h1>LOG IN</h1>
-<button routerLink="">Back<button>
+<form>
+  <label>
+    Email:
+    <input type="email"/>
+  </label>
+  <br>
+  <label>
+    Password:
+    <input type="password"/>
+  </label>
+  <br>
+  <button (click)="onLoginSubmit()">Submit</button>
+</form>
+<footer>
+  <button routerLink="">Back</button>
+</footer>

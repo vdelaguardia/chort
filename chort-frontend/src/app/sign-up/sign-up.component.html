@@ -1,2 +1,27 @@
 <h1>SIGN-UP</h1>
-<button routerLink="">Back<button>
+<form>
+  <label>
+    First Name:
+    <input type="text"/>
+  </label>
+  <br>
+  <label>
+    Last Name:
+    <input type="text"/>
+  </label>
+  <br>
+  <label>
+    Email:
+    <input type="email"/>
+  </label>
+  <br>
+  <label>
+    Password:
+    <input type="password"/>
+  </label>
+  <br>
+  <button (click)="onSignupSubmit()">Submit</button>
+</form>
+<footer>
+  <button routerLink="">Back</button>
+</footer>
