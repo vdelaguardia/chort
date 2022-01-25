@@ -12,15 +12,4 @@ export class WelcomeComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
-  login(): void {
-    console.log('login clicked');
-    this.router.navigate(['/login']);
-  }
-
-  signup(): void {
-    console.log('signup clicked');
-    this.router.navigate(['/signup']);
-  }
-
 }

@@ -17,7 +17,7 @@ import { RouterModule } from '@angular/router';
   imports: [
     BrowserModule,
     RouterModule.forRoot([
-      { path: '', component: AppComponent },
+      { path: '', component: WelcomeComponent },
       { path: 'login', component: LoginComponent },
       { path: 'signup', component: SignUpComponent },
     ])
