@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
-namespace chort_backend.Entities
+namespace chort_backend.source.data.entities
 {
     public partial class ChortDbContext : DbContext
     {

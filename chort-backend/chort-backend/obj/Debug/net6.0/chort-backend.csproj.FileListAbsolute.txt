@@ -32,3 +32,4 @@ C:\Users\jacob\Documents\Programming\Personal\chort\chort-backend\chort-backend\
 C:\Users\jacob\Documents\Programming\Personal\chort\chort-backend\chort-backend\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\jacob\Documents\Programming\Personal\chort\chort-backend\chort-backend\bin\Debug\net6.0\Npgsql.dll
 C:\Users\jacob\Documents\Programming\Personal\chort\chort-backend\chort-backend\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\jacob\Documents\Programming\Personal\chort\chort-backend\chort-backend\bin\Debug\net6.0\Newtonsoft.Json.dll

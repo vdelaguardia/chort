@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace chort_backend.Entities
+namespace chort_backend.source.data.entities
 {
     public partial class HouseholdMembers
     {
