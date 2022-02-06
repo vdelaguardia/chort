@@ -1,0 +1,1 @@
+dotnet ef dbcontext scaffold "Server=ruby.db.elephantsql.com;Port=5432;Database=ubbajsdn;User Id=ubbajsdn;Password=jMCzN05hmtIB7HhVzH5DGakY1H5ql1mZ;" Npgsql.EntityFrameworkCore.PostgreSQL -o Entities --no-pluralize -c ChortDbContext -f
