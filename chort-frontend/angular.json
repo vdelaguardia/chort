@@ -5,7 +5,11 @@
   "projects": {
     "chort-frontend": {
       "projectType": "application",
-      "schematics": {"@schematics/angular:component": { "style": "less" }},
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "less"
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -24,6 +28,7 @@
               "src/assets"
             ],
             "styles": [
+              "src/custom-theme.scss",
               "src/styles.less"
             ],
             "scripts": []
@@ -119,6 +124,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "chort-frontend"
 }

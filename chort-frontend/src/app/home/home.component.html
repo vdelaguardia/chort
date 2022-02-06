@@ -1,0 +1,28 @@
+<div>
+  <div>
+    <H1>{{homeAddress}}</H1>
+  </div>
+  <div>
+    <h2>Today's Chores</h2>
+    <div>
+      <ul>
+        <li *ngFor="let chore of dailyChores">{{ chore.name }}</li>
+      </ul>
+    </div>
+
+    <h2>This Week's Chores</h2>
+    <div>
+      <ul>
+        <li *ngFor="let chore of weeklyChores">{{ chore.name }}</li>
+      </ul>
+    </div>
+
+    <h2>This Month's Chores</h2>
+    <div>
+      <ul>
+        <li *ngFor="let chore of monthlyChores">{{ chore.name }}</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
