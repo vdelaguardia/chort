@@ -6,12 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AuthButtonComponent } from './auth-button/auth-button.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
+import { ChoreChartComponent } from './chore-chart/chore-chart.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AuthButtonComponent,
-    UserProfileComponent
+    UserProfileComponent,
+    ChoreChartComponent
   ],
   imports: [
     BrowserModule,
