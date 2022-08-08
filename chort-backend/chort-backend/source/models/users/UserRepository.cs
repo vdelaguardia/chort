@@ -24,6 +24,19 @@ namespace chort_backend.source.data.models.users
             }
         }
 
+        public Users GetUserByEmail(string email)
+        {
+            Users? user = _dbContext.Users.Find(email);
+
+            if (user != null)
+                return user;
+            else
+            {
+                // throw error
+                return null;
+            }
+        }
+
         public void Post(Users model)
         {
             if (model.Id == null || model.Id == string.Empty) 

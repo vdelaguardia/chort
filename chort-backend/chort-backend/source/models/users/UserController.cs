@@ -13,9 +13,17 @@ namespace chort_backend.source.data.models.users
                 _repository = repository;
 
             app.MapGet("/users/{id}", GetHandler);
+            app.MapGet("/users/{email}", GetUserByEmailHandler);
             app.MapPost("/users", PostHandler);
             app.MapPut("/users", PutHandler);
             app.MapDelete("/users/{id}", DeleteHandler);
         }
+
+        protected Delegate GetUserByEmailHandler = (HttpContext context, string email) =>
+        {
+            T model = _repository.GetUserByEmail(email);
+            string body = JsonConvert.SerializeObject(model);
+            return context.Response.WriteAsync(body);
+        };
     }
 }
