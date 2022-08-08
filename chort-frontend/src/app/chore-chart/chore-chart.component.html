@@ -1,14 +1,33 @@
 <div>
-    <h2>Today's Chores</h2>
-    <table>
-        <thead>
-            <th>Name</th>
-        </thead>
-        <tbody>
-            <tr *ngFor="let chore of chores">
-                <td>{{chore.name}}</td>
-            </tr>
-        </tbody>
-    </table>
+    <div>
+        <h2>Today's Chores</h2>
+        <table>
+            <thead>
+                <th>Name</th>
+            </thead>
+            <tbody>
+                <tr *ngFor="let chore of chores">
+                    <td>{{chore.name}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <button id="addChoreBtn" (click)="addChoreDialog()">Add Chore</button>
+    </div>
+    <div>
+        <dialog id="addChoreDialog" style="width:50%;background-color:#f5f5f5;border:1px solid black;">  
+            <h2>Add Chore to Household</h2>
+            <form>
+                <label for="choreName">Chore: </label>
+                <input type="text" name="choreName"><br>
+                <label for="difficulty">Difficulty: </label>
+                <input type="number" name="difficulty" max="5" min="1"><br>
+                <!-- <button id="choreSubmit" (click)="addChore()">Submit</button> -->
+                <input type="submit" value="Submit">  
+            </form>
+            <button id="hide">Close</button>  
+        </dialog>  
+    </div>
 </div>
     

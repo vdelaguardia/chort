@@ -14,4 +14,8 @@ export class ChoreService {
     const chores = of(CHORES);
     return chores;
   }
+
+  addChore(chore: ChoreModel): void {
+
+  }
 }
