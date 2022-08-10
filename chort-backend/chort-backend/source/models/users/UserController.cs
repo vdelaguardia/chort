@@ -7,6 +7,7 @@ namespace chort_backend.source.data.models.users
 {
     public class UserController : CrudController<Users>
     {
+        protected static new UserRepository _repository;
         public UserController(UserRepository repository, WebApplication app)
         {
             if (_repository == null)
@@ -21,7 +22,7 @@ namespace chort_backend.source.data.models.users
 
         protected Delegate GetUserByEmailHandler = (HttpContext context, string email) =>
         {
-            T model = _repository.GetUserByEmail(email);
+            Users model = _repository.GetUserByEmail(email);
             string body = JsonConvert.SerializeObject(model);
             return context.Response.WriteAsync(body);
         };
