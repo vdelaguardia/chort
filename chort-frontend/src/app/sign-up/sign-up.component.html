@@ -21,7 +21,7 @@
   </label>
   <br>
 </form>
-<button (click)="onSignupSubmit()">Submit</button>
-<footer>
-  <button routerLink="">Back</button>
-</footer>
+<div id="signup-btns">
+  <button mat-raised-button routerLink="">Back</button>
+  <button mat-raised-button color="primary" (click)="onSignupSubmit()">Submit</button>
+</div>

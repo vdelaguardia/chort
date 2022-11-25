@@ -1,17 +1,18 @@
 <h1>Log In</h1>
 <form>
-  <label>
-    Email:
-    <input type="email" placeholder="Email"/>
-  </label>
+  <mat-form-field>
+    <mat-label>Email:</mat-label>
+    <input matInput required type="email" placeholder="Email"/>
+    <mat-error *ngIf="email.invalid">{{getErrorMessage("email")}}</mat-error>
+  </mat-form-field >
   <br>
-  <label>
-    Password:
-    <input type="password" placeholder="Password"/>
-  </label>
+  <mat-form-field>
+    <mat-label>Password:</mat-label>
+    <input matInput required type="password" placeholder="Password"/>
+  </mat-form-field >
   <br>
+  <div id="login-btns">
+    <button mat-raised-button routerLink="">Back</button>
+    <button mat-raised-button color="primary" (click)="onLoginSubmit()">Sign In</button>
+  </div>
 </form>
-<button mat-raised-button color="primary" routerLink="../home">Submit</button>
-<footer>
-  <button routerLink="">Back</button>
-</footer>
